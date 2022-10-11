@@ -1,0 +1,21 @@
+[package]
+name = "prowl-queue"
+version = "0.1.0"
+edition = "2021"
+authors = ["Myles Empty Best"]
+license = "MIT" # Tokio is MIT only.
+keywords = ["prowl", "notifications"]
+description = "Send prowl notifications with retries. See https://www.prowlapp.com"
+homepage = "https://github.com/TheEmpty/prowl-queue"
+repository = "https://github.com/TheEmpty/prowl-queue"
+
+[dependencies]
+prowl = "0.2.5"
+tokio = { version = "1.20.1", features = ["full"] }
+log = "0.4.0"
+derive-getters = "0.2.0"
+derive-new = "0.5"
+thiserror = "1.0.33"
+
+[lib]
+path = "src/lib.rs"
