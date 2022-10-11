@@ -27,7 +27,7 @@ pub enum AddError {
     SendError(SendError<Notification>),
 }
 
-/// Implements a Tokio mspc backed notification queue.
+/// Implements a Tokio mpsc backed notification queue.
 impl ProwlQueue {
     pub fn new(options: ProwlQueueOptions) -> Self {
         let (sender, reciever) = unbounded_channel();
