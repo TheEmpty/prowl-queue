@@ -11,6 +11,7 @@ pub struct ProwlQueue {
     prowl_queue_sender: ProwlQueueSender,
 }
 
+#[derive(Clone)]
 pub struct ProwlQueueSender {
     sender: UnboundedSender<Notification>,
 }
