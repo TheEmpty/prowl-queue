@@ -96,6 +96,10 @@ impl ProwlQueueReceiver {
         }
         log::warn!("Notification channel has been closed.");
     }
+
+    pub fn to_unbound_receiver(self) -> UnboundedReceiver<Notification> {
+        self.reciever
+    }
 }
 
 impl Default for ProwlQueue {

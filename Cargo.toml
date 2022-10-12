@@ -1,6 +1,6 @@
 [package]
 name = "prowl-queue"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 authors = ["Myles Empty Best"]
 license = "MIT" # Tokio is MIT only.
